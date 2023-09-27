@@ -1,0 +1,90 @@
+:root {
+    --background-color: #222327;
+    --second-color: #131414;
+    --light-color: #FF4D4D;
+}
+
+* {
+    font-family: "Montserrat", sans-serif;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+main {
+    width: 100%;
+    height: 100vh;
+    background-color: var(--background-color);
+    display: flex;
+    flex-direction: row;
+}
+
+form {
+    flex: 2;
+    background-color: var(--second-color);
+    color: var(--light-color);
+    display: flex;
+    flex-direction: column;
+    max-height: 100vh;
+    overflow-y: auto;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+form button {
+    width: 100%;
+    border: none;
+    min-height: 50px;
+    background: transparent;
+    color: white;
+    transition: all 0.5s;
+}
+
+form button:hover,
+form button:active {
+    background-color: #CD3C3C;
+    cursor: pointer;
+}
+
+form::-webkit-scrollbar {
+    width: 5px;
+}
+
+form::-webkit-scrollbar-thumb {
+    background-color: var(--light-color);
+}
+
+form::-webkit-scrollbar-track {
+    background-color: #101012;
+}
+
+#info {
+    flex: 8;
+}
+
+#info {
+    color: white;
+    padding-top: 20px;
+    padding-left: 50px;
+    padding-right: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+div {
+    display: flex;
+    flex-direction: column;
+    gap: 20px
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 30px;
+}
