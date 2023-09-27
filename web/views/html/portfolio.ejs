@@ -7,14 +7,30 @@
         <link rel="stylesheet" href="/styles/portfolio.css">
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
         <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-        <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/themes/prism.min.css" rel="stylesheet" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.3.1/styles/atom-one-dark.min.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.3.1/highlight.min.js"></script>        
     </head>
     <body>
         <main>
             <form></form>
-            <div id="info"></div>
+            <div id="info">
+                <!-- <div class="code">
+                    <div class="header">
+                        <p>js</p>
+                        <p style="cursor: pointer;">Copy code</p>
+                    </div>
+                    <div class="footer">
+                        <pre><code class="javascript">const asd = "asdasd";
+
+console.log("asd");
+
+asd.pre().like === "asdasd" ? asd : "asdasdasdasdasdasdasdasdasd";</code></pre>
+                    </div>
+                </div> -->
+            </div>
         </main>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/prism.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/languages/go.min.js"></script>
+        <script>hljs.highlightAll();</script>
         <script src="/scripts/portfolio.js"></script>
     </body>
 </html>
